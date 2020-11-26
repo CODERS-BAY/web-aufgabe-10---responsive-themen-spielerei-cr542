@@ -1,90 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
+    <title>Pilotenkurse</title>
     <meta charset="utf-8" />
-    <meta name="description" content="Reiseziele" />
+    <meta
+      name="description"
+      content="Werde ein besserer Pilot - buche jetzt einen Technikkurs!"
+    />
     <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="style/style.css" rel="stylesheet" />
-    <link href="style/style_flexbox.css" rel="stylesheet" />
-    <title>Reiseziele</title>
+    <link rel="stylesheet" href="styles/main-style.css" />
+    <link rel="stylesheet" href="styles/flexboxes.css" />
+    <link rel="stylesheet" href="styles/media_queries.css">
   </head>
-  <body>
-    <header>
-      <div class="header">
-        <div class="headline">
-          <h1><a href="index.html">Reiseziele</a></h1>
-        </div>
-      </div>
+  <main>
+    <header id="start">
+      <h1>Werde ein besserer Pilot!</h1>
     </header>
-    <main>
-      <article>
-        <p class="welcometext">
-          Im Folgenden beschreibe ich einige Reiseziele, die ich mir unbedingt
-          ansehen möchte. <br />
-          Klick einfach auf das entsprechende Bild, um mehr über das Reiseziel
-          zu erfahren - warum ich dort hin möchte und was ich mir dort ansehen
-          will bzw. was ich dort unternehmen möchte.<br />
-          <a href="gallery.html">Hier</a> gibts die besten Bilder der Locations
-          noch als Fotogalerie!
-        </p>
-      </article>
-      <article>
-        <div class="flex-cont-linkbox">
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="paris.html"
-                ><img src="media/paris_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>Paris - geplant nächstes Jahr</figcaption>
-            </figure>
+    <nav>
+      <ul>
+        <li><a href="#thermiktraining">Thermiktraining</a></li>
+        <li>
+          <a href="#start_lande_training">Start- und Landetraining</a>
+        </li>
+        <li><a href="#gebirgstraining">Gebirgsflugtraining</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section>
+        <h2>Servus beim Paraglider Training Center Austria!</h2>
+        <div id="flex_container_welcome">
+          <div id="flex_item_welcome_1">
+          <p>
+            Wir freuen uns, dass Du vorbeischaust. Wir sind ein Team aus
+            begeisterten Piloten und fliegen schon einige Jahre. Nach unserer
+            Grundausbildung folgte eine steile Lernkurve - das kennst Du sicher
+            von dir selbst!<br />
+            Jedoch kam dann der Moment, ab welchem man gefühlt nichts mehr
+            dazulernt. Und deshalb sind wir hier - wir bieten qualitativ
+            hochwertige Fortbildungskurse für Paragleiter!
+          </p>
+        </div>
+        <div id="flex_item_welcome_2">
+          <p>
+            Das Ziel ist es, die Lernkurve nicht abflachen zu lassen, sondern
+            das fliegerische Können und auch das Mindset zu optimieren. Dazu
+            haben wir eine Auswahl an spannenden Kursen. Aber schau doch einfach
+            selbst. Bei Fragen kannst du dich natürlich gerne mit uns in
+            Verbindung setzen. <br>
+            Wir freuen uns, bald von dir zu hören!
+          </p>
+        </div>
+      </section>
+      <section>
+        <h3 id="thermiktraining">Thermiktraining</h3>
+        <div id="flex_container_thermik">
+          <div id="flex_item_thermik_1">
+            <p>
+              Welcher Pilot liebt es nicht? Thermikfliegen ist eine
+              unbeschreibliche Erfahrung! Fast wie durch Zauberhand steigt man
+              mit dem Gleitschirm immer weiter nach oben. Ist die Thermik erst
+              einmal zentriert, geht es permanent und konstant nach oben - bis
+              zur Wolkenbasis! Flüge über 3.000m sind keine Seltenheit. Damit
+              das auch klappt muss man schon einiges an Wissen haben: Wo finde
+              ich die Thermik? Wie verhalte ich mich in der Thermik? Mit welchen
+              Gefahren muss ich als Pilot rechnen? Wie reagiere ich auf
+              Turbulenzen?<br />
+              Das ist zugegeben schon einiges! Aber dafür gibt es diesen Kurs.
+              Hier erlernst du die Grundlagen des Thermikfliegens, erwirbst das
+              theoretische Grundwissen und setzt dieses unter Anleitung von
+              erfahrenen Piloten in die Praxis um!<br />
+              Bring deine Fähigkeiten auf ein neues Level!
+            </p>
           </div>
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="venice.html"
-                ><img src="media/venice_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>Venedig wird eine Überraschung</figcaption>
-            </figure>
-          </div>
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="greece.html"
-                ><img src="media/greece_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>Griechenland - aber welche Insel?</figcaption>
-            </figure>
-          </div>
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="ireland.html"
-                ><img src="media/ireland_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>Irland ist landschaftlich wunderschön</figcaption>
-            </figure>
-          </div>
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="croatia.html"
-                ><img src="media/croatia_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>Tauchen in Kroatien</figcaption>
-            </figure>
-          </div>
-          <div class="flex-item-linkbox">
-            <figure>
-              <a href="london.html"
-                ><img src="media/london_thumbnail.jpg" class="img-linkbox"
-              /></a>
-              <figcaption>London muss man gesehen haben</figcaption>
-            </figure>
+          <div id="flex_item_thermik_2">
+            <img src="media/thermiktraining_1.jpg" alt="Thermiktraining" />
           </div>
         </div>
-      </article>
-    </main>
-    <footer>Coded by C. Reisenauer | Codersbay | Nov. 2020</footer>
-  </body>
+      </section>
+      <div id="site_divider">
+      </div>
+      <section>
+        <h3 id="start_lande_training">Start- und Landetraining</h3>
+        <div id="flex_container_slt">
+          <div id="flex_item_slt_1">
+            <figure>
+              <img
+                id="slt_text_bild"
+                src="media/start_lande_training_1.jpg"
+                alt="Landen"
+              />
+              <figcaption>Landen will gelernt sein</figcaption>
+            </figure>
+            <p>
+              Starten und Landen mit dem Gleitschirm. Kann doch eh jeder,
+              oder?<br />
+              Falsch gedacht! Gerade Start und Landung sind die
+              anspruchsvollsten Phasen des Fliegens. Und hier passieren
+              erwiesenermaßen die meisten Unfälle! Piloten starten oft
+              schlampig, kontrollieren den Schirm nicht ausreichend und wählen
+              die falsche Starttechnik, weil sie nur eine beherrschen. Bei den
+              Landungen verhält es sich ähnlich - Landemanöver werden schlampig
+              ausgeführt, der Wind wird zu wenig beachtet und der Endanflug ist
+              oft viel zu schnell. <br />
+              Hier kommen wir ins Spiel. Wir lernen dir verschiedene Start- und
+              Landetechniken, damit du in jeder Situation, an jedem Startplatz
+              und an jedem Landeplatz sicher unterwegs bist!<br />
+              Bring deine Fähigkeiten auf ein neues Level!
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="site_divider_2">
+      </div>
+      <section>
+        <h3 id="gebirgstraining">Gebirgsflugtraining</h3>
+        <div id="flex_container_gft">
+          <div id="flex_item_gft_1">
+            <img src="media/gebirgstraining_2.jpg" alt="Gebirgsflugtraining" />
+          </div>
+          <div id="flex_item_gft_2">
+            <p>
+              Das Fliegen im Gebirge ist unserer Meinung nach die schönste Art
+              zu fliegen. Aber auch die anspruchsvollste! Fliegen im Gebirge ist
+              traumhaft. Aufsteigen über die Gipfel der Berge, über die Flüsse
+              und Täler fliegen, in der nächsten Thermik wieder hochkurbeln. Das
+              ist die Königsklasse des Fliegens!<br />
+              Aber das Gebirge hat auch seine Tücken. Schnelle Wetterwechsel,
+              unberechenbare Windsituationen, Turbulenzen in Kammlagen, Föhn,
+              Lee-Lagen und viele weitere Dinge gilt es zu beachten. Um
+              entspannt im Gebirge fliegen zu können, kannst Du diesen Kurs
+              machen. Danach bist du für alles gewappnet, was dir hier
+              widerfahren kann. <br />
+              Bring deine Fähigkeiten auf ein neues Level!
+            </p>
+          </div>
+          <div id="flex_item_gft_3">
+            <img src="media/gebirgstraining_3.jpg" alt="Aufziehen im Gebirge" />
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer>
+        <p>Designed by C. Reisenauer</p>
+    </footer>
+  </main>
 </html>

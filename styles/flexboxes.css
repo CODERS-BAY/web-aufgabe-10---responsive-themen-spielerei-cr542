@@ -6,8 +6,6 @@
 #flex_item_thermik_1 {
   width: 50%;
   text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 #flex_item_thermik_2 {
@@ -23,8 +21,6 @@
 #flex_item_slt_1 {
   width: 100%;
   text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 #flex_container_gft {
@@ -40,8 +36,6 @@
 #flex_item_gft_2 {
   width: 33%;
   text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 #flex_item_gft_3 {
@@ -57,13 +51,11 @@
 }
 
 #flex_item_welcome_1 {
-  padding: 1rem;
-  width: 49%;
+  width: 50%;
   text-align: left;
 }
 
 #flex_item_welcome_2 {
-  padding: 1rem;
-  width: 49%;
+  width: 50%;
   text-align: left;
 }

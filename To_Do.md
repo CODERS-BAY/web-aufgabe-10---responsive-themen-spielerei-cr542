@@ -1,6 +1,5 @@
 # To Do's:
 
-- Erstelle verschiedene Breakpoints in deiner Seite, für eine unterschiedliche Darstellung auf Tablets und Handys
 - Erstelle (falls noch nicht vorhanden) ein Kontaktformular für deine Reisedestination Seite bei der du mittels Dropdown eine Destination auch auswählen kannst plus ein paar anderer Formularfelder. In der mobilen Ansicht sollen die Labels für die Inputfelder darüber stehen, auf großen Screens daneben.
 - Binde für die unterschiedlichen Displaygrößen unterschiedliche Fotos ein
 - Baue eine Keyframe Animation ein

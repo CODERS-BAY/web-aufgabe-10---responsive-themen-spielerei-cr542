@@ -41,13 +41,7 @@ h2 {
   font-size: 4.5vh;
 }
 
-h3 {
-  text-align: center;
-  font-size: 4vh;
-}
-
 nav {
-  padding: 1rem;
   margin-bottom: 2rem;
   /*   -webkit-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.29);
   box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.29); */

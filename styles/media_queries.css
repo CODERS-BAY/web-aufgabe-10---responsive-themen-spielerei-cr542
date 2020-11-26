@@ -108,3 +108,39 @@
     text-align: left;
   }
 }
+
+@media print {
+  nav {
+    display: none;
+  }
+  header {
+    min-height: 30vh;
+  }
+  img {
+    display: none;
+  }
+  #flex_container_thermik {
+    display: block;
+  }
+  #flex_item_thermik_1 {
+    width: 100%;
+  }
+  #flex_item_thermik_2 {
+    display: none;
+  }
+  figure {
+    display: none;
+  }
+  #flex_container_gft {
+    display: block;
+  }
+  #flex_item_gft_1 {
+    display: none;
+  }
+  #flex_item_gft_2 {
+    width: 100%;
+  }
+  #flex_item_gft_3 {
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+h1 {
+  color: white;
+  letter-spacing: 0.5rem;
+  padding-left: 3rem;
+  padding-top: 9rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 8vw;
+}
+
+h2 {
+  font-size: 180%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+header {
+  min-height: 65vh;
+  background-image: url("../media/airplane_head_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+}
+
+footer {
+  padding: 0.5rem;
+  margin-top: 2.5rem;
+  font-size: 80%;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 90%;
+  padding-top: 0.4rem;
+}
+
+article p {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  min-height: 45vh;
+}
+
+.headline {
+  display: flex;
+  align-self: center;
+}
+
+.welcometext {
+  padding: 0.4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.img-linkbox {
+  width: 60%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.img-linkbox:hover {
+  width: 60%;
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.img-tripinfo {
+  width: 100%;
+}

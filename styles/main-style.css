@@ -149,7 +149,7 @@ footer p {
 }
 
 #contact_form {
-  max-width: 60%;
+  min-width: 60%;
   margin: 0 auto;
   border: 0.03rem solid grey;
   padding: 1.5rem;
@@ -157,7 +157,6 @@ footer p {
 
 .cnt_form {
   display: flex;
-  flex-direction: row;
 }
 
 .cnt_form > * {
@@ -167,5 +166,5 @@ footer p {
 
 .form_buttons {
   text-align: right;
-  padding: 2rem;
+  padding: 1rem;
 }

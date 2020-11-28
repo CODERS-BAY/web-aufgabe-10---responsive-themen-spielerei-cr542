@@ -6,6 +6,7 @@
 #flex_item_thermik_1 {
   width: 50%;
   text-align: left;
+  margin-right: 00.5rem;
 }
 
 #flex_item_thermik_2 {
@@ -30,16 +31,18 @@
 
 #flex_item_gft_1 {
   padding-top: 1.5rem;
-  width: 33%;
+  width: 30%;
 }
 
 #flex_item_gft_2 {
   width: 33%;
   text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #flex_item_gft_3 {
-  width: 33%;
+  width: 30%;
   padding-top: 1.5rem;
 }
 

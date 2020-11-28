@@ -3,6 +3,12 @@ body {
   font-size: 110%;
 }
 
+::placeholder {
+  font-family: "Prompt", sans-serif;
+  color: lightgrey;
+  font-size: 90%;
+}
+
 p {
   line-height: 180%;
 }
@@ -140,4 +146,26 @@ footer p {
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.7;
+}
+
+#contact_form {
+  max-width: 60%;
+  margin: 0 auto;
+  border: 0.03rem solid grey;
+  padding: 1.5rem;
+}
+
+.cnt_form {
+  display: flex;
+  flex-direction: row;
+}
+
+.cnt_form > * {
+  padding: 1rem;
+  flex-basis: 30%;
+}
+
+.form_buttons {
+  text-align: right;
+  padding: 2rem;
 }

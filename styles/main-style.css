@@ -148,23 +148,349 @@ footer p {
   opacity: 0.7;
 }
 
-#contact_form {
-  min-width: 60%;
-  margin: 0 auto;
-  border: 0.03rem solid grey;
-  padding: 1.5rem;
-}
+/* ********** FLEXBOXEN ********** */
 
-.cnt_form {
+#flex_container_thermik {
   display: flex;
+  flex-direction: row;
 }
 
-.cnt_form > * {
-  padding: 1rem;
-  flex-basis: 30%;
+#flex_item_thermik_1 {
+  width: 50%;
+  text-align: left;
+  margin-right: 00.5rem;
 }
 
-.form_buttons {
-  text-align: right;
-  padding: 1rem;
+#flex_item_thermik_2 {
+  padding-top: 1.5rem;
+  width: 50%;
+}
+
+#flex_container_slt {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex_item_slt_1 {
+  width: 100%;
+  text-align: left;
+}
+
+#flex_container_gft {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex_item_gft_1 {
+  padding-top: 1.5rem;
+  width: 30%;
+}
+
+#flex_item_gft_2 {
+  width: 33%;
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#flex_item_gft_3 {
+  width: 30%;
+  padding-top: 1.5rem;
+}
+
+#flex_container_welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+}
+
+#flex_item_welcome_1 {
+  width: 50%;
+  text-align: left;
+}
+
+#flex_item_welcome_2 {
+  width: 50%;
+  text-align: left;
+}
+
+/* ************** MEDIA QUERIES **************** */
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  body {
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 5vh;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3.5vh;
+  }
+
+  header {
+    min-height: 60vh;
+    background-position: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav li {
+    padding: 0.5rem;
+  }
+
+  nav a {
+    font-size: 2.5vh;
+    padding: 2rem;
+  }
+
+  nav a:hover {
+    color: black;
+    /*text-decoration: underline;*/
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.27);
+  }
+
+  #flex_container_thermik {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #flex_item_thermik_1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  #flex_item_thermik_2 {
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+
+  #flex_container_slt {
+    flex-wrap: wrap;
+  }
+
+  #flex_container_gft {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #flex_item_gft_1 {
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+
+  #flex_item_gft_2 {
+    width: 100%;
+    text-align: left;
+    columns: 1;
+  }
+
+  #flex_item_gft_3 {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  #flex_container_welcome {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+  }
+
+  #flex_item_welcome_1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  #flex_item_welcome_2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  #contact_form {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.03rem solid lightgrey;
+    padding: 1.5rem;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .cnt_form {
+    display: block;
+    padding-top: 1.5rem;
+  }
+
+  .cnt_form label {
+    padding-right: 6rem;
+    flex-basis: 25%;
+  }
+
+  .cnt_form > * {
+    padding: 0.5rem;
+    flex-basis: 50%;
+  }
+
+  .form_buttons {
+    padding-top: 3rem;
+    text-align: right;
+  }
+
+  textarea {
+    width: 90%;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  h1 {
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav li {
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 2.5vh;
+  }
+
+  nav a::hover {
+    color: black;
+    /*text-decoration: underline;*/
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.27);
+  }
+
+  #flex_container_welcome {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #flex_item_welcome_1 {
+    width: 48%;
+  }
+
+  #flex_item_welcome_2 {
+    width: 48%;
+  }
+
+  #flex_item_thermik_1 {
+    padding-right: 1rem;
+  }
+
+  #flex_container_gft {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #flex_item_gft_1 {
+    padding-top: 1.5rem;
+    width: 45%;
+  }
+
+  #flex_item_gft_2 {
+    width: 50%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  #flex_item_gft_3 {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  #contact_form {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.03rem solid lightgrey;
+    padding: 1.5rem;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .cnt_form {
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  .cnt_form label {
+    padding: 1rem;
+    flex-basis: 25%;
+  }
+
+  .cnt_form > * {
+    padding: 1rem;
+    flex-basis: 50%;
+  }
+
+  .form_buttons {
+    padding-top: 3rem;
+    text-align: right;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #contact_form {
+    width: 60%;
+    transition: width 2s ease;
+    margin: 0 auto;
+    border: 0.03rem solid lightgrey;
+    padding: 1.5rem;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  #contact_form::hover {
+    width: 80%;
+  }
+
+  .cnt_form {
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  .cnt_form label {
+    padding: 1rem;
+    flex-basis: 25%;
+  }
+
+  .cnt_form > * {
+    padding: 1rem;
+    flex-basis: 50%;
+  }
+
+  .form_buttons {
+    padding-top: 3rem;
+    text-align: right;
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+  }
 }

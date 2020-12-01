@@ -1,3 +1,7 @@
+:root {
+  --glider_animation_background: lightblue;
+}
+
 body {
   font-family: "Prompt", sans-serif;
   font-size: 110%;
@@ -146,6 +150,43 @@ footer p {
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.7;
+}
+
+#glider {
+  background-color: var(--glider_animation_background);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0.03rem solid lightgrey;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#glider_animation {
+  width: 128px;
+  height: 128px;
+}
+
+#start:checked ~ #glider_animation {
+  animation-name: glider_start;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes glider_start {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1300%);
+  }
+}
+
+#get_the_glider {
+  order: 1;
 }
 
 /* ********** FLEXBOXEN ********** */
@@ -457,16 +498,11 @@ footer p {
 @media screen and (min-width: 1280px) {
   #contact_form {
     width: 60%;
-    transition: width 2s ease;
     margin: 0 auto;
     border: 0.03rem solid lightgrey;
     padding: 1.5rem;
     -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.45);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
-  }
-
-  #contact_form::hover {
-    width: 80%;
   }
 
   .cnt_form {

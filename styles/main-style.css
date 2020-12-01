@@ -189,6 +189,10 @@ footer p {
   order: 1;
 }
 
+.pg_image:hover {
+  filter: grayscale();
+}
+
 /* ********** FLEXBOXEN ********** */
 
 #flex_container_thermik {
